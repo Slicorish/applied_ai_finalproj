@@ -17,8 +17,8 @@ from src.recommender import load_songs, recommend_songs
 # column names in data/songs.csv so score_song can compare them directly.
 LATE_NIGHT_FOCUS = {
     # Categorical: exact-match preferences
-    "genre": "lofi",
-    "mood": "focused",
+    "genre": "study",   # closest Spotify genre to lofi; the dataset has no "lofi"
+    "mood": "chill",    # low energy, mid valence (see derive_mood)
     # Numeric 0-1 targets: the ideal value for each feature
     "energy": 0.40,            # calm, not sleepy
     "valence": 0.58,           # emotionally neutral

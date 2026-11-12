@@ -59,19 +59,35 @@ FEATURE_RANGES = {
     "duration_sec": 300.0,
 }
 
-# Categories that are close enough to earn partial credit.
+# Categories that are close enough to earn partial credit. Each value may sit
+# in at most one group. Moods are derived from valence/energy in
+# scripts/build_songs_csv.py; genres are the normalized Spotify genre names.
 RELATED_MOODS = [
-    {"chill", "relaxed", "peaceful", "focused"},
-    {"intense", "angry", "aggressive", "defiant"},
-    {"happy", "uplifting", "euphoric", "energetic"},
-    {"sad", "melancholic", "nostalgic", "reflective"},
+    {"chill", "relaxed"},
+    {"sad", "melancholic"},
+    {"happy", "euphoric"},
+    {"energetic", "aggressive"},
 ]
 RELATED_GENRES = [
-    {"pop", "indie pop"},
-    {"hip hop", "r&b"},
-    {"rock", "metal"},
-    {"lofi", "ambient", "jazz"},
-    {"edm", "synthwave"},
+    {"pop", "indie pop", "synth pop", "power pop", "pop film",
+     "k pop", "j pop", "mandopop", "cantopop", "j idol", "j dance"},
+    {"hip hop", "r&b", "soul", "trip hop"},
+    {"rock", "alt rock", "hard rock", "punk rock", "punk", "grunge",
+     "psych rock", "rock n roll", "rockabilly", "j rock", "emo",
+     "alternative", "indie", "goth"},
+    {"metal", "heavy metal", "black metal", "death metal", "metalcore",
+     "grindcore", "hardcore", "industrial"},
+    {"study", "sleep", "ambient", "piano", "new age", "classical"},
+    {"jazz", "blues", "groove", "funk", "disco"},
+    {"edm", "electro", "electronic", "dance", "club", "house", "deep house",
+     "progressive house", "chicago house", "techno", "minimal techno",
+     "detroit techno", "trance", "hardstyle", "idm", "breakbeat",
+     "drum and bass", "dubstep", "garage"},
+    {"latin", "latino", "spanish", "reggaeton", "salsa", "tango", "samba",
+     "pagode", "sertanejo", "forro", "mpb", "brazil"},
+    {"country", "honky tonk", "bluegrass", "folk", "acoustic",
+     "singer songwriter", "songwriter"},
+    {"reggae", "dancehall", "dub", "ska"},
 ]
 RELATED_CREDIT = 0.5
 
@@ -174,7 +190,7 @@ class Recommender:
 def iter_songs(csv_path: str) -> Iterator[Dict]:
     """Lazily yields one typed song dict per CSV row."""
     int_fields = {"id", "tempo_bpm", "popularity", "duration_sec"}
-    text_fields = {"title", "artist", "genre", "mood"}
+    text_fields = {"title", "artist", "all_artists", "genre", "mood"}
     with open(csv_path, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             yield {

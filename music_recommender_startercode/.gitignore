@@ -19,3 +19,6 @@ venv/
 
 .env
 .cache
+
+# Raw Kaggle download (see scripts/build_songs_csv.py)
+data/raw/
