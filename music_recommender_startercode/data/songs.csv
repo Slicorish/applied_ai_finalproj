@@ -1,0 +1,24 @@
+id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness,speechiness,instrumentalness,popularity,duration_sec
+1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18,0.05,0.0,85,198
+2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71,0.04,0.88,62,176
+3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10,0.06,0.02,70,224
+4,Library Rain,Paper Lanterns,lofi,chill,0.35,72,0.60,0.58,0.86,0.04,0.91,55,162
+5,Gym Hero,Max Pulse,pop,intense,0.93,132,0.77,0.88,0.05,0.08,0.01,90,185
+6,Spacewalk Thoughts,Orbit Bloom,ambient,chill,0.28,60,0.65,0.41,0.92,0.03,0.95,38,312
+7,Coffee Shop Stories,Slow Stereo,jazz,relaxed,0.37,90,0.71,0.54,0.89,0.05,0.82,48,254
+8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22,0.04,0.72,66,238
+9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78,0.04,0.9,58,168
+10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35,0.05,0.03,74,205
+11,Dust Road Home,Willow Creek,country,nostalgic,0.48,96,0.62,0.55,0.74,0.04,0.01,60,232
+12,Concrete Kingdom,Lyric Axis,hip hop,confident,0.80,92,0.58,0.85,0.08,0.32,0.0,82,214
+13,Velvet Hours,Mara Sol,r&b,romantic,0.52,84,0.68,0.72,0.30,0.06,0.01,77,246
+14,Iron Requiem,Black Cathedral,metal,angry,0.97,170,0.22,0.45,0.04,0.09,0.05,52,287
+15,Calle Sol,Los Faroles,reggaeton,energetic,0.88,98,0.90,0.92,0.12,0.15,0.0,92,192
+16,Nocturne in Rain,Elena Voss,classical,melancholic,0.22,64,0.25,0.28,0.96,0.03,0.97,34,358
+17,Porch Light Sessions,Amber Fields,folk,peaceful,0.30,82,0.66,0.45,0.93,0.04,0.06,41,219
+18,Bass Cathedral,Kinetic Drift,edm,euphoric,0.95,128,0.86,0.90,0.03,0.07,0.3,88,206
+19,Blue Monday Blues,Delta Slim,blues,sad,0.38,70,0.30,0.48,0.80,0.04,0.03,44,271
+20,Monsoon Dance,Raga Collective,world,uplifting,0.70,110,0.78,0.76,0.60,0.05,0.18,50,263
+21,No Role Modelz,J. Cole,hip hop,reflective,0.64,100,0.48,0.70,0.03,0.17,0.00,80,292
+22,HUMBLE.,Kendrick Lamar,hip hop,defiant,0.62,150,0.42,0.91,0.00,0.10,0.00,88,177
+23,Ruff Ryders' Anthem,DMX,hip hop,aggressive,0.89,92,0.51,0.75,0.02,0.28,0.00,70,213
